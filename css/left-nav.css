@@ -1,0 +1,128 @@
+*{ margin: 0; padding: 0; }
+img{border:0;}
+ul,li{list-style-type:none;}
+a {color:#00007F;text-decoration:none;}
+a:hover {color:#04b6f1;text-decoration:underline;}
+.treebox{ width: 240px; margin: 0 auto; background-color:#181f29; }
+.menu{ overflow: hidden; }
+/*第一层*/
+.menu li.level1>a{ 
+	display:block;
+	height:70px;
+	line-height: 70px;
+	color: #fff;
+	padding-left: 65px;
+	font-size: 16px;
+	
+	
+	position: relative;
+ }
+ .menu li.level1 a:hover{background-color:#202d40;   }
+ .menu li.level1 a.current{ background: #202d40; }
+
+/*============修饰图标*/
+ .ico{ width: 25px; height: 24px; display:block; position: absolute; left: 30px; top: 24px; background-repeat: no-repeat; background-image: url(../img/img.png); }
+
+ /*============小箭头*/
+ .level1 i{ width: 7px; height: 12px; background-image:url(../img/imgq.png); background-repeat: no-repeat; display: block; position: absolute; right: 20px; top: 28px; }
+.level1 i.down{  width: 14px; height: 10px; background-image:url(../img/imgq.png); background-repeat: no-repeat; display: block; position: absolute; right: 14px; top: 28px;background-position: 0 -14px; }
+
+ .ico1{ background-position: 0 0; }
+ .ico2{ background-position: 0 -28px; }
+ .ico3{ background-position: 0 -54px; }
+ .ico4{ background-position: 0 -72px; }
+ .ico5{ background-position: 0 -80px; }
+
+ /*第二层*/
+ .menu li ul{ overflow: hidden; }
+ .menu li ul.level2{ display: none;background: #202d40;  }
+ .menu li ul.level2 li a{
+ 	display: block;
+	height: 45px;
+	line-height: 45px;
+	color: #fff;
+	text-indent: 60px;
+	font-size: 14px;
+ }
+		 
+/*图片与小图标格式开始*/
+.min_logo{
+	height: 57px;
+}
+.ico_off_size{
+	width=21px;
+	height=20px
+}
+.ico_modify_size{
+	width:16px;
+	height: 18px;
+}
+.ico_user_size{
+	width:21px;
+	height: 21px;
+}
+
+/*图片与小图标格式结束*/
+		 
+		 
+
+/*左边导航样式*/
+body{
+	background: #1d212a;
+}
+.fontcolor ,a{
+	color:#fff;
+	font-family:"微软雅黑";
+}
+.container{
+	position: absolute;
+	width:100%;
+	height: 100%;
+	min-width:1110px;
+}
+.top{
+	width:1920px;
+	height: 60px;
+	background:#000;
+}
+.minlogo{
+	float: left;
+	margin-left: 50px;
+}
+.nav{
+	width:350px;
+	height: 60px;
+	float: right;
+	
+}
+.navlist li{
+	float:right;
+	height:60px;
+	line-height: 60px;
+	margin-right: 30px;
+}
+.navlist li img{
+	margin-right: 9px;
+	vertical-align:middle
+}
+.left{
+	clear: both;
+	height:1020px;
+	width:240px;
+	background:#181f29;
+	float:left;
+	/*margin-left: -210px;*/
+}
+.left_nav_T ul li{
+	width:210px;
+	height: 70px;
+	line-height: 70px;
+	padding-left: 30px;
+}
+.left_nav_T ul li img{
+	vertical-align:middle;
+	margin-right: 11px;
+}
+.left_nav_T ul a{text-decoration:none;}
+.left_nav_T ul a li:hover{background-color: #202d40;}
+.right{width: 100%;}

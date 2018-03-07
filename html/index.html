@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, width=device-width" />
+		<title>首页</title>
+		<link href="../css/reset.css" rel="stylesheet" style="text/css" />
+		<link rel="stylesheet" type="text/css" href="../css/left-nav.css" />
+		<link rel="stylesheet" type="text/css" href="../css/tab.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<script src="../js/jquery-1.9.1.min.js" type="text/javascript"></script>
+		<!--日历-->
+		<link href='../css/fullcalendar.css' rel='stylesheet'/>
+		<link href='../css/fullcalendar.print.css' rel='stylesheet' media='print' />
+		<script src='../js/jquery-ui.custom.min.js'></script>
+		<script src='../js/fullcalendar.min.js'></script>
+		<script>
+			$(document).ready(function() {
+				var date = new Date();
+				var d = date.getDate();
+				var m = date.getMonth();
+				var y = date.getFullYear();
+				$('#calendar').fullCalendar({
+					editable: true,
+					events: [
+						{
+							title: 'All Day Event',
+							start: new Date(y, m, 1)
+						},
+						{
+							title: 'Long Event',
+							start: new Date(y, m, d - 5),
+							end: new Date(y, m, d - 2)
+						},
+						{
+							id: 999,
+							title: 'Repeating Event',
+							start: new Date(y, m, d - 3, 16, 0),
+							allDay: false
+						},
+						{
+							id: 999,
+							title: 'Repeating Event',
+							start: new Date(y, m, d + 4, 16, 0),
+							allDay: false
+						},
+						{
+							title: 'Meeting',
+							start: new Date(y, m, d, 10, 30),
+							allDay: false
+						},
+						{
+							title: 'Lunch',
+							start: new Date(y, m, d, 12, 0),
+							end: new Date(y, m, d, 14, 0),
+							allDay: false
+						},
+		
+						{
+							title: 'Birthday Party',
+							start: new Date(y, m, d + 1, 19, 0),
+							end: new Date(y, m, d + 1, 22, 30),
+							allDay: false
+						},
+						{
+							title: 'Click for Google',
+							start: new Date(y, m, 28),
+							end: new Date(y, m, 29),
+							url: 'http://google.com/'
+						}
+					]
+				});
+			});
+		</script>
+
+	</head>
+
+	<body style="width:1920px;">
+		<div class="container" style="position: relative;">
+			<div class="top">
+				<div class="minlogo">
+					<img src="../img/logo2.png"/>
+				</div>
+				<div class="nav">
+					<ul class="navlist fontcolor">
+						<a href="" id="">
+							<li><img src="../img/tc.png" class="ico_off_size"><span>退出登录</span></li>
+						</a>
+						<a href="" id="">
+							<li><img src="../img/Password.png" class="ico_modify_size"><span>修改密码</span></li>
+						</a>
+						<a href="" id="">
+							<li><img src="../img/yh.png" class="ico_user_size"><span>阿春哥</span></li>
+						</a>
+					</ul>
+				</div>
+			</div>
+			<div class="left">
+				<div class="left_nav_T">
+					<ul class="fontcolor">
+						<a href="index.html" id="">
+							<li style="background: #202d40;"><img src="../img/index.png"><span>首页</span></li>
+						</a> 
+						<a href="gonggao/Notice.html" id="">
+							<li><img src="../img/gg.png"><span>公示公告</span></li>
+						</a>
+					</ul>
+				</div>
+				<div class="treebox">
+					<ul class="menu">
+						<li class="level1">
+							<a href="#none"><em class="ico ico1"></em>办公管理<i class="down"></i></a>
+							<ul class="level2">
+								<li>
+									<a href="../html/bangongguanli/Apply.html">申请</a>
+								</li>
+								<li>
+									<a href="../html/bangongguanli/proposal.html">建议</a>
+								</li>
+								<li>
+									<a href="javascript:;">组织结构</a>
+								</li>
+								<li>
+									<a href="../html/bangongguanli/Rules.html">规章制度</a>
+								</li>
+							</ul>
+						</li>
+						<li class="level1">
+							<a href="#none"><em class="ico ico2"></em>人事管理<i></i></a>
+							<ul id="" class="level2">
+								<li>
+									<a href="renshiguanli/renshi_Rules.html">规章制度</a>
+								</li>
+								<li>
+									<a href="renshiguanli/renshi_Notice.html">公告活动</a>
+								</li>
+								<li>
+									<a href="renshiguanli/Add_staff.html">添加员工</a>
+								</li>
+								<li>
+									<a href="javascript:;">员工信息</a>
+								</li>
+								<li>
+									<a href="renshiguanli/approval.html">审批情况</a>
+								</li>
+							</ul>
+						</li>
+						<li class="level1">
+							<a href="#none"><em class="ico ico3"></em>权限管理<i></i></a>
+							<ul class="level2">
+								<li>
+									<a href="quanxianguanli/Jurisdiction.html">权限分配</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="right">
+				<div class="indcontent" style="float: left;">
+					<div class="tabtop">
+						<div class="tabtitle">
+							<ul id="myTab">
+								<li class="cur">
+									<a>办公管理</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="newNot_Ltabbottom fontcolor">
+						<div class="rili_div">
+							<div id='calendar'></div>
+						</div>
+						<div class="add_new" style="float: right;" >
+							<div id="" class="Event">
+								<p><img src="../img/add2.png"/> 添加新事件</p>
+							</div>
+							<div class="new_tip">
+								<div class="">
+									<img src="../img/1_03.png">
+									<span style="color:#0eca22">请假1天</span>
+								</div>
+								<div class="">
+									<img src="../img/2_03.png">
+									<span style="color:#eae70e">加班2小时</span>
+								</div>
+								<div class="" style="color:#3cbed5">
+									<img src="../img/3_06.png">
+									<span>今日任务</span>
+									<div class="Task_content">开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统</div>
+								</div>
+								<div class="" style="color:#ef8306">
+									<img src="../img/4_06.png">
+									<span>待办事宜</span>
+									<div class="Task_content">开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统</div>
+								</div>
+								<div class="" style="color:#ef8306">
+									<img src="../img/4_06.png">
+									<span>待办事宜</span>
+									<div class="Task_content">开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统开发人事系统</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+				<div class=" new_Not" style="float:left">
+					<div class="tabtop ">
+						<div class="tabtitle">
+							<ul id="myTab">
+								<li class="cur">
+									<a>最新公告</a>
+								</li>
+								<a href="gonggao/Notice.html"><li class="moreright" style="float:right; text-align: right;padding-right: 10px;">更多公告>>	</li></a>
+							</ul>
+						</div>
+					</div>
+					<div class="newNot_tabbottom fontcolor" >
+						<div class="new_Notice">
+							<p class="title">人事竞聘任命公告</p>
+							<p class="data">2012-10-12</p>
+							<p class="Notice_text">这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容</p>
+							<p class="department">人事行政部</p>
+						</div>
+						<p style="height: 0px; border-bottom:2px dotted  #939aac; margin:100px 20px 0px 20px;"></p><!--中间虚线-->
+						<div class="new_Notice">
+							<p class="title">人事竞聘任命公告</p>
+							<p class="data">2012-10-12</p>
+							<p class="Notice_text">这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容这个是内容</p>
+							<p class="department">人事行政部</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<!--选项卡-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#myTab li").click(function() {
+					$("#myTab li").eq($(this).index()).addClass("cur").siblings().removeClass('cur');
+					$(".tabbottom").hide().eq($(this).index()).show();
+					//另一种方法: $("div").eq($(".tab li").index(this)).addClass("on").siblings().removeClass('on'); 
+				});
+			});
+		</script>
+		<script src="../js/jquery.easing.js"></script>
+		<script>
+			//等待dom元素加载完毕.
+			$(function() {
+				$(".treebox .level1>a").click(function() {
+					$(this).addClass('current') //给当前元素添加"current"样式
+						.find('i').addClass('down') //小箭头向下样式
+						.parent().next().slideDown('slow', 'easeOutQuad') //下一个元素显示
+						.parent().siblings().children('a').removeClass('current') //父元素的兄弟元素的子元素去除"current"样式
+						.find('i').removeClass('down').parent().next().slideUp('slow', 'easeOutQuad'); //隐藏
+					return false; //阻止默认时间
+				});
+			})
+		</script>
+	</body>
+
+</html>

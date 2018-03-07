@@ -1,0 +1,70 @@
+/*首页样式开始*/
+.new_Not,.add_new{float:right;}
+.indcontent,.new_Not{margin:20px 0px 0px 20px;}
+.indcontent{
+	width: 1120px;
+	height: 880px;
+	border-radius: 9px;
+}
+.indcontent .newNot_Ltabbottom{
+    width:1080px;
+    height: 770px;
+    margin-top: 20px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.add_new,.add_new .Event,.add_new .Event p{
+	 border-top-right-radius: 6px;
+}
+.newNot_tabbottom .tabbottom {
+	margin-top: 50px;
+	height: 430px;
+}
+.new_Not{
+	width: 500px;
+	height: 880px;
+	border-radius: 9px;
+}
+.new_Notice{
+	margin:0 auto;
+	margin-top:40px;
+	width: 460px;
+}
+.new_Not .tabbottom {margin-top: 40px;}
+.new_Notice .title{
+	font-size: 18px;
+	color:#09a8de;
+	margin-bottom: 15px;
+}
+.new_Notice .data,.new_Notice .Notice_text{margin-bottom: 35px;}
+.new_Notice .Notice_text{line-height: 25px;}
+.add_new{
+	z-index: 999;
+	width:310px; 
+	height: 770px; 
+	background: #344258;
+}
+.add_new .Event{
+	width:310px;
+	height: 110px; 
+	background: #23334e;
+}
+.add_new .Event p{line-height: 110px;}
+.add_new .new_tip img,.add_new .Event p,.add_new .new_tip span{vertical-align: middle;}
+.add_new .Event p{line-height: 110px;}
+.add_new .new_tip{margin:25px 30px 0px 10px;}
+.add_new .new_tip div{margin-bottom: 24px;}
+.add_new .new_tip p{height: 20px;line-height: 10px;}
+.add_new .new_tip span{margin-left: 4px;}
+.new_tip .Task_content{
+	margin-left: 30px;
+	margin-top:8px;
+	line-height: 24px;
+}
+.rili_div{
+	width: 770px;
+	float:left;
+	color: #000000;
+	border-top-left-radius: 10px;
+}
+/*首页样式结束*/

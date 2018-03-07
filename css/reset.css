@@ -1,0 +1,417 @@
+﻿/* reset */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:12px/1.14 arial,\5b8b\4f53;color:#333;outline:0; }
+
+
+
+
+
+body{background:#fff;}
+a,a:hover{color:#333; }
+.listno1{border-top:1px dashed #626262;}
+button{
+	height: 30px;
+	width:50px;
+	background: #04b6f1;
+	border:none;
+	color: #fdf4f6;
+}
+.quanxian{width:80px;}
+.delbuttom{background:#dc004e;}
+.add_role{
+	width:100px;
+	height: 35px;
+	float:right;
+	margin-top:20px;
+}
+.buttom_bai{
+	background: #04b6f1;
+	border:none;
+	color: #fdf4f6;
+	width:100px;
+    height: 35px;
+}
+/*字体*/
+textarea,.leave div,.Add_staff tr .input_text,.tabbottom ul li,.new_Not .tabbottom ,.new_Notice .data,.add_new .Event p,.add_new .new_tip,.new_Notice .Notice_text,.navlist li,.jurisdiction_settings,.del_btn .text,.jurisdiction_settings,.moreright,table tr td{font-size: 14px;font-family: "微软雅黑";}
+table th,.tabtitle ul li a,.load_btn,.tijiao_btn,.add_form,.Add_tabbottom .Add_staff,.tabtitle span,.Reason textarea,.qingkuang textarea,.Feel_div,.xinde_tab li,.state_time div,.left_nav_T ul li,.modify,.modify .title,.del_btn,.jurisdiction_settings .content .title{font-size: 16px;font-family: "微软雅黑";}
+.jiabantiao,.tabbottom .propos_btn,.load_btn .buttom p,.tijiao_btn .buttom p,.add_form div,.load_btn,.tijiao_btn.tabtitle ul li,.tabbottom table,.tabbottom table th,.add_new .Event,.modify,.del_btn,.buttom p,.jurisdiction_settings .content .title,.content .btn{text-align: center;}
+select,.renshiguanli_R_content,.Add_staff_R_content,.Add_staff tr .input_text,.Add_staff tr td select,.Reason textarea,.qingkuang textarea,.xinde_tab li input,.xinde_tab li select,.inputstyle,.indcontent,.new_Not  {background: #262a35;}
+.Reason textarea,.qingkuang textarea,.checkbox,.xinde_tab li input,.xinde_tab li select,.input input,.add_form table tr input,.Add_staff tr .input_text{border-style: none;}
+.add_form table,.add_file,.Add_tabbottom,.tabbottom .propos_btn,.Feel_div table,.indcontent .newNot_Ltabbottom,.newNot_tabbottom .tabbottom,.new_Not .tabbottom,.jurisdiction_settings .content{margin: 0 auto;}
+select,.add_form table tr input,.add_form table tr select,.Add_staff tr .input_text,.buttom_bai,button,.details_time div input,.tabbottom .propos_btn,.Feel_title,.Feel_problem,.Feel_obj,.Feel_table_hide input,.Feel_table_hide textarea,.xinde_tab li input,.xinde_tab li select,.Feel_div,.input input,.add_file{border-radius: 4px;}
+.Feel_table_hide input,.Feel_table_hide textarea,.add_form table tr input,.add_form table tr select,.input input{border:1px solid #989fb1;}
+.load_btn .buttom p:hover,.tijiao_btn .buttom p:hover,.buttom p:hover{color: #2bbbf2;}
+.tabtitle span,.Reason textarea,.details_time div input,.qingkuang textarea,.xinde_tab li input,.xinde_tab li select,.new_Notice .data,.add_new .Event p,.tabtitle ul li,.inputstyle,select,.Add_staff tr .input_text,.Add_staff tr td select{color: #fff;}
+.modify,.del_btn,.jurisdiction_settings,.add_form table tr select,.tabbottom .propos_btn,.indcontent .newNot_Ltabbottom{background: #fff;}
+.modify,.del_btn,.jurisdiction_settings,.Feel_div,.load_btn,.tijiao_btn{position: absolute; top:200px;left: 500px;}
+.inputstyle {
+    width: 150px;
+    height: 24px;
+    padding-left: 20px;
+    border:1px solid #ffffff;
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255,255,255);
+    margin: 0px 0px 18px;
+}
+textarea{
+	text-indent: 23px;
+	padding-top:8px;
+	line-height: 24px;
+}
+.hide {display: none;}
+a,.cur,.tabtitle ul li a, .menu li.level1 a:hover{text-decoration: none;}
+
+/*审批颜色开始*/
+.Result{color: #06afe8}
+.and_approval{color: #f1a004;}
+.not_approval{color: #dc004e; border-right-style: none;}
+/*审批颜色结束*/
+
+/*操作按钮共同样式开始*/
+.caozuo button{margin: 0 5px;}
+/*操作按钮共同样式结束*/
+
+
+/*审批情况页面公共样式开始*/
+.leave{clear: both;}
+.leave div{
+	float:left;
+	line-height: 100px;
+	/*padding-right: 20px;*/
+}
+/*.leave div button{margin-left: 20px;}*/
+.start_time{margin-right: 30px;}
+/*审批情况页面公共样式结束*/
+
+/*取消按钮公共样式开始*/
+.quxiao{border-right:1px solid #f2f2f2;}
+/*取消按钮公共样式结束*/
+
+
+
+
+
+
+
+
+/*办公管理样式表开始*/
+.details_time div input,.Feel_table_hide input,.Feel_table_hide textarea,.xinde_tab li input{ text-indent: 9px;}
+.sddjy,.sddxd{color:#000000;}
+.Feeel_Whether span{margin-right: 50px;}
+.tabtitle span{line-height: 70px;}
+.detailstitle{height: 70px;}
+.details{height: 600px;}
+.yaunyin span{margin:0px 15px 0px 9px;}
+.marginleft{margin-left: 20px;}
+.query_btn{width:100px;}
+	/*申请页面样式开始*/
+.state_time{width:100%;}
+.state_time div{float:left;margin-right: 80px;}
+.state_time div span{color: #1489b5;}
+	/*申请页面样式结束*/
+.Received{background:#04b6f1;}
+.Reason textarea{
+	width:100%;
+	height: 80px;
+	text-indent: 35px;
+	margin-top: 10px;
+}
+.details_time div{
+	float:left;
+	margin-left: 20px;
+	margin-right: 5px;
+}
+.details_time div input{
+	background:none;
+	width: 180px;
+	height: 24px;
+	border:1px solid #fff;
+}
+.qingkuang textarea{
+	width:100%;
+	height: 50px;
+	margin-top:10px;
+	text-indent: 35px;
+}
+
+.tabbottom .propos_btn{
+	width:240px;
+	height: 30px;
+	margin-bottom: 20px;
+	border:1px solid #04b6f1;
+}
+.tabbottom .propos_btn a{
+	float:left;
+	width:120px;
+	line-height: 30px;
+}
+/*写心得样式*/
+.Feel_div{
+	width:640px; 
+	height: 460px; 
+	background: #fff;
+    display: none;
+}
+.Feel_div table{
+	width:640px;
+	height: 400px;
+	font-weight: 400;
+	border-collapse:collapse;
+}
+.Feel_title{width:350px;height:20px;}
+.Feel_left{width:150px;text-align: right;}
+.Feel_problem{width:350px;height: 100px;}
+.Feel_obj{width:160px;height: 24px; background: #fff; border: 1px solid #989fb1; color: #000;}
+.Feel_button button{width: 100px;height: 34px;margin-right: 20px;margin-top:5px;}
+.Feel_table_hide,.Feel_table_hide tr,.Feel_table_hide tr th,.Feel_table_hide tr td{padding: 20px 0 0 5px;border:none;}
+.xinde_tab li{float:left;margin:20px 20px 30px 0px;line-height: 36px;}
+.xinde_tab li input,.xinde_tab li select{border:1px solid #fff;height: 24px;}
+.xinde_tab li input{width:150px;line-height: 24px;}
+
+/*办公管理样式表结束*/
+
+
+
+
+
+
+
+/*人事管理样式表开始*/
+.tabbottom ul li .spanleft,.load_btn .buttom p,.tijiao_btn .buttom p{float: left;}
+.tabbottom ul li .spanright,.Add_staff tr .span,.leave div{margin-right: 20px;}
+.form_tj button,.add_form div button{width:100px;}
+.list_xls .spanleft{color: #fff;}
+select{
+	width:100px;
+	height: 24px;
+	border:1px solid #fff;
+}
+.renshiguanli_R_content{
+	width: 1620px;
+	height: 880px;
+	margin-left: 260px;
+	margin-top: 20px;
+	border-radius: 9px;
+}
+.add_renshigonggao{
+	width: 100px;
+    position: absolute;
+    top: 161px;
+    left: 1320px;
+}
+.tabbottom ul li .spanright {float: right;}
+.tabbottom ul li .spanright a {color: #888;}
+.tabbottom ul li .spanright a{margin-right: 90px;}
+	/*下载弹窗样式开始*/
+.load_btn,.tijiao_btn{
+	width:340px;
+	height: 200px; 
+	background: #fff;
+	z-index: 99;
+	border-radius: 8px;
+}
+.load_btn .title,.tijiao_btn .title{margin-top:20px; font-size: 16px;}
+.load_btn .text,.tijiao_btn .text{margin-top: 40px; line-height: 24px;}
+.load_btn .buttom,.tijiao_btn .buttom{
+	border-top:1px solid #f2f2f2;
+	position: absolute;
+	bottom: 0px;
+	height: 50px;
+	width:341px;
+}
+.load_btn .buttom p,.tijiao_btn .buttom p{
+	width:170px;
+	line-height: 50px;
+}
+	/*下载弹窗样式结束*/
+.form_tj button{
+	margin-right: 20px;
+	margin-top:21px;
+}
+.list_xls li span button{margin-left: 10px;}
+.Rules_btn{
+	width:100px;
+	float:right;
+	margin-top:40px;
+}
+
+	/*添加审批表样式开始*/
+.add_form{
+	position: absolute;
+	top:200px;
+	left: 500px;
+	width:560px;
+	height: 360px;
+	background: #fff;
+	border-radius: 5px;
+	font-family: "微软雅黑";
+	font-weight: 500;
+}
+.add_form table{
+	width:446px;
+	margin-top:40px;
+}
+.add_form div button{margin:0 10px;}
+.add_form table .name_left{
+	text-align: right;
+	width:100px;
+}
+.add_form table tr{
+	height: 30px;
+	line-height: 40px;
+}
+.add_form table tr input{
+	width:350px;
+	height: 30px;
+	text-indent: 10px;
+}
+.add_form table tr select{
+	width:160px;
+	height: 24px;
+	color:#000;
+}
+.add_file{
+	width:100px;
+	height: 100px;
+	border:1px dashed #989fb1;
+	margin-top:10px;
+	margin-bottom:30px;
+    vertical-align:middle;
+	line-height: 115px;
+}
+.add_form table tr span{
+	color:#04B6F1;
+	text-decoration: underline;
+}
+	/*添加审批表样式结束*/
+
+	/*添加员工信息样式开始*/
+.Add_staff_R_content {
+    width: 1000px;
+    height: 910px;
+    margin-left: 260px;
+    margin-top: 20px;
+    border-radius: 9px;
+}
+.Add_tabbottom{
+	width: 94%;
+    margin-top: 50px;
+    height: 430px;
+}
+.Add_tabbottom .Add_staff{width:600px;}
+.Add_staff tr{line-height: 50px;}
+.Add_staff tr .name_left{
+	text-align: right;
+	width:70px;
+	padding-right: 10px;
+}
+.Add_staff_btn{
+	margin-top:20px;
+	width:100px;
+}
+.Add_staff tr .input_text{
+	border:1px solid #fff;
+	width:300px;
+	height: 30px;
+	text-indent: 10px;
+}
+.Add_staff tr td select{
+	width:160px;
+	height: 30px;
+}
+.checkbox,.radio{vertical-align: middle;}
+.tijiao_btn{text-align: center; font-size: 14px;}
+/*人事管理样式表结束*/
+
+
+
+/*权限管理样式表开始*/
+.modify{
+	width:560px;
+	height: 360px; 
+	z-index: 99;
+	border-radius: 5px;
+}
+.modify .title{
+	margin-top:20px;
+	margin-bottom: 50px;
+	font-family: "微软雅黑";
+}
+.input input{
+	width:350px;
+	height: 30px;
+	text-indent: 10px;
+	margin-bottom: 30px;
+}
+.modify .state{
+	margin-bottom: 75px;
+	margin-left: -170px;
+}
+.state input{
+	width:15px;
+	height: 15px;
+}
+.state span{margin-right: 25px;}
+.modify button{
+	width:100px;
+	margin:0 15px;
+}
+	/*删除弹窗样式开始*/
+.del_btn{
+	width:340px;
+	height: 200px; 
+	z-index: 99;
+	border-radius: 8px;
+}
+.del_btn .title{margin-top:20px;}
+.del_btn .text{margin-top: 60px;}
+.buttom{
+	border-top:1px solid #f2f2f2;
+	position: absolute;
+	bottom: 0px;
+	height: 50px;
+	width:341px;
+}
+.buttom p{
+	width:170px;
+	float: left;
+	line-height: 50px;
+}
+	/*删除弹窗样式结束*/
+
+	/*权限设置弹窗样式开始*/
+.jurisdiction_settings{
+	width:560px;
+	height: 420px; 
+	z-index: 99;
+	border-radius: 8px;
+}
+.jurisdiction_settings .content{width:480px;}
+.jurisdiction_settings .content .toplist{height: 45px;}
+.jurisdiction_settings .content .title{padding-top:5px;}
+.content .bangonggaunli,.content .renshiguanli,.content .quanxianguanli{height: 67px;}
+.content .bangonggaunli .name,.content .renshiguanli .name,.content .quanxianguanli .name,.jurisdiction_settings .content .toplist{line-height: 46px;}
+.content .bangonggaunli span,.content .renshiguanli span,.content .quanxianguanli span{margin-left: 15px;}
+.content .btn{padding:20px;}
+.content .btn button{margin: 0px 15px;width:100px;}
+.content .bangonggaunli,.content .renshiguanli,.border_bottom{border-bottom: 1px solid #f2f2f2;}
+	/*权限设置弹窗样式结束*/
+/*权限管理样式表结束*/

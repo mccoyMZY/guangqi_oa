@@ -1,0 +1,71 @@
+#content div {display: none;}
+.R_content {
+	width: 1220px;
+	height: 880px;
+	background: #262a35;
+	margin-left: 260px;
+	margin-top: 20px;
+	border-radius: 9px;
+}
+.sq_R_content{
+	width: 1220px;
+	height: 640px;
+	background: #262a35;
+	margin-left: 260px;
+	margin-top: 20px;
+	border-radius: 9px;
+}
+.tabtop {
+	height: 70px;
+	width: 100%;
+	background: #dc004e;
+	border-top-right-radius: 9px;
+	border-top-left-radius: 9px;
+}
+.tabtitle ul li {
+	float: left;
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	margin-top: 20px;
+	text-align: center;
+}
+.tabbottom {
+	width: 94%;
+	margin: 0 auto;
+	margin-top: 50px;
+	height: 880px;
+	overflow:hidden;
+}
+.cur {
+	border-top-right-radius: 9px;
+	border-top-left-radius: 9px;
+	background: #262a35;
+}
+
+.tabbottom ul li {
+	height: 58px;
+	border-bottom: 1px dashed #626262;
+	line-height: 58px;
+}
+.tabbottom ul li span {float: right; color: #888888;}
+.list_xls{display:block;}
+/*加班请假tab样式开始*/
+.tabbottom table {
+	width: 100%;
+	border: 1px solid #989fb1;
+	border-radius: 5px;
+	line-height: 20px;
+	text-align: center;
+}
+			
+.tabbottom table th {
+	line-height: 40px;
+	background: #262a35;
+	color: #f5f5f5;
+	text-align: center;
+}
+.tabbottom table .tabletitle th{background:#313644;}
+.tabbottom table tr {line-height: 60px;}
+
+/*加班请假tab样式结束*/

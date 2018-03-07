@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, width=device-width" />
+		<title>申请加班条详情</title>
+		<link href="../../css/reset.css" rel="stylesheet" style="text/css" />
+		<link rel="stylesheet" type="text/css" href="../../css/left-nav.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/tab.css" />
+   		<link href="../../css/jedate.css" rel="stylesheet">
+		<script src="../../js/jquery-1.9.1.min.js" type="text/javascript"></script>
+		<script src="../../js/jquery.jedate.js" type="text/javascript"></script>
+		<!--<script src="../../js/fullcalendar.js" type="text/javascript"></script>-->
+	</head>
+	<body>
+		<div class="container">
+			<div class="top">
+				<div class="minlogo">
+					<img src="../../img/logo2.png"  />
+				</div>
+				<div class="nav">
+					<ul class="navlist fontcolor">
+						<a href="" id="">
+							<li><img src="../../img/tc.png"><span>退出登录</span></li>
+						</a>
+						<a href="" id="">
+							<li><img src="../../img/Password.png"><span>修改密码</span></li>
+						</a>
+						<a href="" id="">
+							<li><img src="../../img/yh.png"><span>机器人</span></li>
+						</a>
+					</ul>
+				</div>
+			</div>
+			<div class="left">
+				<div class="left_nav_T">
+					<ul class="fontcolor">
+						<a href="../index.html" id="">
+							<li><img src="../../img/index.png"><span>首页</span></li>
+						</a>
+						<a href="../gonggao/Notice.html" id="">
+							<li><img src="../../img/gg.png"><span>公示公告</span></li>
+						</a>
+					</ul>
+				</div>
+				<div class="treebox">
+					<ul class="menu">
+						<li class="level1">
+							<a href="#none"><em class="ico ico1"></em>办公管理<i class="down"></i></a>
+							<ul class="level2">
+								<li>
+									<a href="../bangongguanli/Apply.html" style="color: #08a8df;">申请</a>
+								</li>
+								<li>
+									<a href="../bangongguanli/proposal.html">建议</a>
+								</li>
+								<li>
+									<a href="javascript:;">组织结构</a>
+								</li>
+								<li>
+									<a href="../bangongguanli/Rules.html">规章制度</a>
+								</li>
+							</ul>
+						</li>
+						<li class="level1">
+							<a href="#none"><em class="ico ico2"></em>人事管理<i></i></a>
+							<ul id="" class="level2">
+								<li>
+									<a href="../renshiguanli/renshi_Rules.html">规章制度</a>
+								</li>
+								<li>
+									<a href="../renshiguanli/renshi_Notice.html">公告活动</a>
+								</li>
+								<li>
+									<a href="../renshiguanli/Add_staff.html">添加员工</a>
+								</li>
+								<li>
+									<a href="javascript:;">员工信息</a>
+								</li>
+								<li>
+									<a href="../renshiguanli/approval.html">审批情况</a>
+								</li>
+							</ul>
+						</li>
+						<li class="level1">
+							<a href="#none"><em class="ico ico3"></em>权限管理<i></i></a>
+							<ul class="level2">
+								<li>
+									<a href="../quanxianguanli/Jurisdiction.html">权限分配</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="ppp" class="right">
+				<div class="sq_R_content details">
+					<div class="tabtop detailstitle">
+						<div class="tabtitle jiabantiao"><span>加班条</span></div>
+					</div>
+					<div class="tabbottom fontcolor ">
+						<form action="" method="post">
+							<table border="1" class="tiaobiao">
+								<tr>
+									<th colspan="1">加班类型</th>
+									<th colspan="2" width="80%" class="yaunyin">
+										<span><input id="" class="checkbox" name="Reason" type="radio"> 延长工作时间</span>
+										<span><input id="" class="checkbox" name="Reason" type="radio"> 突发事件发生</span>
+										<span><input id="" class="checkbox" name="Reason" type="radio"> 提前完成工作</span>
+										<span><input id="" class="checkbox" name="Reason" type="radio"> 其他</span>
+									</th>
+								</tr>
+								<tr>
+									<td colspan="1">加班理由</td>
+									<td colspan="2" class="Reason">
+										<textarea  placeholder="请输入你的理由"></textarea>
+									</td>
+									
+								</tr>
+								<tr>
+									<td colspan="1">加班时间</td>
+									<td colspan="2" class="details_time">
+										<div id=""><span>从开始日期：</span><input id="inpstart" class="wstxt" readonly></input></div>
+										<div id=""><span>到结束日期：</span><input id="inpend" class="wstxt" readonly></input></div>
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="2">工作完成情况</td>
+									<td style="width: 10%">已办事项</td>
+									<td class="qingkuang">
+										<textarea value=""  placeholder=""></textarea>
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="2" style="width: 10%">待跟进事项</td>
+									<td class="qingkuang">
+										<textarea value=""></textarea>
+									</td>
+								</tr>
+							</table>
+						</form>
+
+						<a href="Apply.html"><button class="add_role marginleft">取 消</button></a>
+						<button class="add_role marginleft">确认申请</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--日历开始-->
+		<script src="../../js/rili.js"></script>
+		<!--日历结束-->
+
+		<!--选项卡-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#myTab li").click(function() {
+					$("#myTab li").eq($(this).index()).addClass("cur").siblings().removeClass('cur');
+					$(".tabbottom").hide().eq($(this).index()).show();
+					//另一种方法: $("div").eq($(".tab li").index(this)).addClass("on").siblings().removeClass('on'); 
+				});
+			});
+		</script>-->
+		<script src="../../js/jquery.easing.js"></script>
+		<script>
+			//等待dom元素加载完毕.
+			$(function() {
+				$(".treebox .level1>a").click(function() {
+					$(this).addClass('current') //给当前元素添加"current"样式
+						.find('i').addClass('down') //小箭头向下样式
+						.parent().next().slideDown('slow', 'easeOutQuad') //下一个元素显示
+						.parent().siblings().children('a').removeClass('current') //父元素的兄弟元素的子元素去除"current"样式
+						.find('i').removeClass('down').parent().next().slideUp('slow', 'easeOutQuad'); //隐藏
+					return false; //阻止默认时间
+				});
+			})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, width=device-width" />
+		<title>建议</title>
+		<link href="../../css/reset.css" rel="stylesheet" style="text/css" />
+		<link rel="stylesheet" type="text/css" href="../../css/left-nav.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/tab.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/jedate.css" />
+		<script src="../../js/jquery-1.9.1.min.js" type="text/javascript"></script>
+		<script src="../../js/jquery.jedate.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="container" style="position: relative;">
+			<div class="top">
+				<div class="minlogo">
+					<img src="../../img/logo2.png"/>
+				</div>
+				<div class="nav">
+					<ul class="navlist fontcolor">
+						<a href="" id="">
+							<li><img src="../../img/tc.png"><span>退出登录</span></li>
+						</a>
+						<a href="" id="">
+							<li><img src="../../img/Password.png"><span>修改密码</span></li>
+						</a>
+						<a href="" id="">
+							<li><img src="../../img/yh.png"><span>机器人</span></li>
+						</a>
+					</ul>
+				</div>
+			</div>
+			<div class="left">
+				<div class="left_nav_T">
+					<ul class="fontcolor">
+						<a href="../index.html" id="">
+							<li><img src="../../img/index.png"><span>首页</span></li>
+						</a>
+						<a href="../gonggao/Notice.html" id="">
+							<li><img src="../../img/gg.png"><span>公示公告</span></li>
+						</a>
+					</ul>
+				</div>
+				<div class="treebox">
+					<ul class="menu">
+						<li class="level1">
+							<a href="#none"><em class="ico ico1"></em>办公管理<i class="down"></i></a>
+							<ul class="level2">
+								<li>
+									<a href="../bangongguanli/Apply.html" >申请</a>
+								</li>
+								<li>
+									<a href="../bangongguanli/proposal.html" style="color: #08a8df;">建议</a>
+								</li>
+								<li>
+									<a href="javascript:;">组织结构</a>
+								</li>
+								<li>
+									<a href="../bangongguanli/Rules.html">规章制度</a>
+								</li>
+							</ul>
+						</li>
+						<li class="level1">
+							<a href="#none"><em class="ico ico2"></em>人事管理<i></i></a>
+							<ul id="" class="level2">
+								<li>
+									<a href="../renshiguanli/renshi_Rules.html">规章制度</a>
+								</li>
+								<li>
+									<a href="../renshiguanli/renshi_Notice.html">公告活动</a>
+								</li>
+								<li>
+									<a href="../renshiguanli/Add_staff.html">添加员工</a>
+								</li>
+								<li>
+									<a href="javascript:;">员工信息</a>
+								</li>
+								<li>
+									<a href="../renshiguanli/approval.html">审批情况</a>
+								</li>
+							</ul>
+						</li>
+						<li class="level1">
+							<a href="#none"><em class="ico ico3"></em>权限管理<i></i></a>
+							<ul class="level2">
+								<li>
+									<a href="../quanxianguanli/Jurisdiction.html">权限分配</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="ppp" class="right">
+				<div class="R_content">
+					<div class="tabtop">
+						<div class="tabtitle">
+							<ul id="myTab">
+								<li class="cur">
+									<a>建议</a>
+								</li>
+								<li>
+									<a>心得</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tabbottom fontcolor">
+						<div class="propos_btn">
+							<a class="Received wdjy">我的建议</a>
+							<a class="sddjy">收到的建议</a>
+						</div>
+						<div class="wodejianyi">
+							<table border="1">
+							    <tr class="tabletitle">
+							        <th>序号</th>
+							        <th>标题</th>
+							        <th>提交对象</th>
+							        <th width="42%">操作</th>
+							    </tr>
+							    <tr>
+							        <td>1</td>
+							        <td>但不太想说，怎么办？</td>
+							        <td>上级领导</td>
+							        <td>
+							        	<div class="caozuo">
+								        	<button>提交</button>
+								        	<button>编辑</button>
+								        	<button>详情</button>
+								        	<button class="delbuttom">删除</button>
+							        	</div>
+							        </td>
+							    </tr>
+							    <tr>
+							        <td>2</td>
+							        <td>但不太想说，怎么办？</td>
+							        <td>上级领导</td>
+							        <td>
+							        	<div class="caozuo">
+								        	<button>提交</button>
+								        	<button>编辑</button>
+								        	<button>详情</button>
+								        	<button class="delbuttom">删除</button>
+							        	</div>
+							        </td>
+							    </tr>
+							    <tr>
+							        <td>3</td>
+							        <td>但不太想说，怎么办？</td>
+							        <td>上级领导</td>
+							        <td>
+							        	<div class="caozuo">
+								        	<button>提交</button>
+								        	<button>编辑</button>
+								        	<button>详情</button>
+								        	<button class="delbuttom">删除</button>
+							        	</div>
+							        </td>
+							    </tr>
+							</table>
+
+						</div>
+						
+						<!--收到的建议开始-->
+						<div  id="" class="shoudaodejianyi hide">
+							<div class="xinde_tab">
+								<li>部门:
+									<select>
+										<option>多媒体部</option>
+									</select>
+								</li>
+								<li>提交人:
+									<select>
+										<option>阿春哥</option>
+									</select>
+								</li>
+								<li>开始时间: <input type="text" class="wstxt inpstart" readonly></li>
+								<li>结束时间: <input type="text" class="wstxt inpend" readonly></li>
+								<li><button class="query_btn">查询</button></li>
+							</div>
+							<table border="1">
+							    <tr class="tabletitle">
+							        <th>序号</th>
+							        <th>标题</th>
+							        <th>提交对象</th>
+							        <th width="42%">操作</th>
+							    </tr>
+							    <tr>
+							        <td>1</td>
+							        <td>但不太想说，怎么办？但不太？但不太想说，怎么办？</td>
+							        <td>上级领导</td>
+							        <td>
+							        	<div class="caozuo">
+								        	<button id="" class="bianji" type="button">详情</button>
+								        	<button id="" class="delbuttom" type="button">删除</button>
+							        	</div>
+							        </td>
+							    </tr>
+							    <tr>
+							        <td>2</td>
+							        <td>但不太想说，怎么办？</td>
+							        <td>上级领导</td>
+							        <td>
+							        	<div class="caozuo">
+								        	<button id="" class="bianji" type="button">详情</button>
+								        	<button id="" class="delbuttom" type="button">删除</button>
+							        	</div>
+							        </td>
+							    </tr>
+							    <tr>
+							        <td>3</td>
+							        <td>但不太想说，怎么办？</td>
+							        <td>上级领导</td>
+							        <td>
+							        	<div class="caozuo">
+								        	<button id="" class="bianji" type="button">详情</button>
+								        	<button id="" class="delbuttom" type="button">删除</button>
+							        	</div>
+							        </td>
+							    </tr>
+							</table>
+						</div>
+						<!--收到的建议结束-->
+					</div>
+					<div class="tabbottom hide fontcolor">
+						<div class="propos_btn">
+							<a class="wdxd Received">我的心得</a>
+							<a class="sddxd" class="Received">收到的心得</a>
+						</div>
+						<!--我的心得开始-->
+						<div id="" class="wodexinde">
+							<table border="1">
+							    <tr class="tabletitle">
+							        <th>序号</th>
+							        <th>标题</th>
+							        <th>提交对象</th>
+							        <th width="42%">操作</th>
+							    </tr>
+							    <tr>
+							        <td>1</td>
+							        <td>但不太想说，怎么办？</td>
+							        <td>上级领导</td>
+							        <td>
+							        	<div class="caozuo">
+								        	<button id="" class="bianji" type="button">提交</button>
+								        	<button id="" class="bianji" type="button">编辑</button>
+								        	<button id="" class="bianji" type="button">详情</button>
+								        	<button id="" class="delbuttom" type="button">删除</button>
+							        	</div>
+							        </td>
+							    </tr>
+							    <tr>
+							        <td>2</td>
+							        <td>但不太想说，怎么办？</td>
+							        <td>上级领导</td>
+							        <td>
+							        	<div class="caozuo">
+								        	<button id="" class="bianji" type="button">提交</button>
+								        	<button id="" class="bianji" type="button">编辑</button>
+								        	<button id="" class="bianji" type="button">详情</button>
+								        	<button id="" class="delbuttom" type="button">删除</button>
+							        	</div>
+							        </td>
+							    </tr>
+							    <tr>
+							        <td>3</td>
+							        <td>但不太想说，怎么办？</td>
+							        <td>上级领导</td>
+							        <td>
+							        	<div class="caozuo">
+								        	<button id="" class="bianji" type="button">提交</button>
+								        	<button id="" class="bianji" type="button">编辑</button>
+								        	<button id="" class="bianji" type="button">详情</button>
+								        	<button id="" class="delbuttom" type="button">删除</button>
+							        	</div>
+							        </td>
+							    </tr>
+							</table>
+							<button class="add_role">写心得</button>
+						</div>
+						<!--我的心得结束-->
+						<!--收到的心得开始-->
+						<div  id="" class="shoudaoxinde hide">
+							<div class="xinde_tab">
+								<li>部门:
+									<select>
+										<option>多媒体部</option>
+									</select>
+								</li>
+								<li>提交人:
+									<select>
+										<option>阿春哥</option>
+									</select>
+								</li>
+								<li>开始时间: <input type="text" class="wstxt inpstart" readonly></li>
+								<li>结束时间: <input type="text" class="wstxt inpend" readonly></li>
+								<li><button class="query_btn">查询</button></li>
+							</div>
+							<table border="1">
+							    <tr>
+							        <th>序号</th>
+							        <th>标题</th>
+							        <th>提交对象</th>
+							        <th width="42%">操作</th>
+							    </tr>
+							    <tr>
+							        <td>1</td>
+							        <td>但不太想说，怎么办？但不太？但不太想说，怎么办？</td>
+							        <td>上级领导</td>
+							        <td>
+							        	<div class="caozuo">
+								        	<button id="" class="bianji" type="button">详情</button>
+								        	<button id="" class="delbuttom" type="button">删除</button>
+							        	</div>
+							        </td>
+							    </tr>
+							    <tr>
+							        <td>2</td>
+							        <td>但不太想说，怎么办？</td>
+							        <td>上级领导</td>
+							        <td>
+							        	<div class="caozuo">
+								        	<button id="" class="bianji" type="button">详情</button>
+								        	<button id="" class="delbuttom" type="button">删除</button>
+							        	</div>
+							        </td>
+							    </tr>
+							    <tr>
+							        <td>3</td>
+							        <td>但不太想说，怎么办？</td>
+							        <td>上级领导</td>
+							        <td>
+							        	<div class="caozuo">
+								        	<button id="" class="bianji" type="button">详情</button>
+								        	<button id="" class="delbuttom" type="button">删除</button>
+							        	</div>
+							        </td>
+							    </tr>
+							</table>
+						</div>
+						<!--收到的心得开始-->
+
+					</div>
+				</div>
+			</div>
+			<!--/写心得弹窗页面开始-->
+			<div class="Feel_div">
+				<!--<form action="" method="post">-->
+					<table class="Feel_table_hide" border="" cellspacing="" cellpadding="">
+						<tr>
+							<td class="Feel_left">标题:</td>
+							<td><input class="Feel_title" type="text"></td>
+						</tr>
+						<tr>
+							<td class="Feel_left">是否匿名:</td>
+							<td class="Feeel_Whether">
+								<span><input type="radio" class="checkbox" name="Whether" id="" value="" />是</span>
+								<span><input type="radio" class="checkbox" name="Whether" id="" value="" checked="checked"/>否</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="Feel_left">请选择提交对象:</td>
+							<td>
+								<select class="Feel_obj">
+									<option >上级领导</option>
+									<option >部门领导</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="Feel_left " style="float:left;">工作内容及心得:</td>
+							<td><textarea class="Feel_problem"></textarea></td>
+						</tr>
+						<tr>
+							<td class="Feel_left" style="float:left;">困难及问题:</td>
+							<td  style="margin-top: 20px;"><textarea class="Feel_problem"></textarea></td>
+						</tr>
+						<tr>
+							<td class="Feel_left"></td>
+							<td class="Feel_button">
+								<button>提交</button>
+								<button>保存</button>
+								<button class="del">取消</button>
+							</td>
+						</tr>
+					</table>
+				<!--</form>-->
+			</div>
+			<!--/写心得弹窗页面结束-->
+			
+		</div>
+		
+		
+		
+		<!--日历开始-->
+		<script>
+			var start = {
+			    format: 'YYYY-MM-DD hh:mm:ss',
+			    minDate: '2014-06-16 23:59:59', //设定最小日期为当前日期
+			    isinitVal:true,
+			    maxDate: $.nowDate({DD:0}), //最大日期
+			    okfun: function(obj){
+			        end.minDate = obj.val; //开始日选好后，重置结束日的最小日期
+			        endDates();
+			    }
+			};
+			var end = {
+			    format: 'YYYY-MM-DD hh:mm:ss',
+			    minDate: $.nowDate({DD:0}), //设定最小日期为当前日期
+			    maxDate: '2099-06-16 23:59:59', //最大日期
+			    okfun: function(obj){
+			        start.maxDate = obj.val; //将结束日的初始值设定为开始日的最大日期
+			    }
+			};
+			//这里是日期联动的关键        
+			function endDates() {
+			    //将结束日期的事件改成 false 即可
+			    end.trigger = false;
+			    $("#inpend").jeDate(end);
+			}
+			$('#inpstart').jeDate(start);
+			$('#inpend').jeDate(end);
+			
+			$('.inpstart').jeDate(start);
+			$('.inpend').jeDate(end);
+			 
+			//或者是
+			$.jeDate('#inpstart',start);
+			$.jeDate('#inpend',end);
+		</script>
+		<!--日历结束-->
+
+		
+
+		<!--选项卡-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#myTab li").click(function() {
+					$("#myTab li").eq($(this).index()).addClass("cur").siblings().removeClass('cur');
+					$(".tabbottom").hide().eq($(this).index()).show();
+					//另一种方法: $("div").eq($(".tab li").index(this)).addClass("on").siblings().removeClass('on'); 
+				});
+			});
+		</script>
+
+		<script src="../../js/jquery.easing.js"></script>
+		<script>
+			//等待dom元素加载完毕.
+			$(function() {
+				$(".treebox .level1>a").click(function() {
+					$(this).addClass('current') //给当前元素添加"current"样式
+						.find('i').addClass('down') //小箭头向下样式
+						.parent().next().slideDown('slow', 'easeOutQuad') //下一个元素显示
+						.parent().siblings().children('a').removeClass('current') //父元素的兄弟元素的子元素去除"current"样式
+						.find('i').removeClass('down').parent().next().slideUp('slow', 'easeOutQuad'); //隐藏
+					return false; //阻止默认时间
+				});
+			})
+			
+			//显示隐藏写心得窗口
+			$('.add_role').click(function(){
+				$('.Feel_div').show();
+			});
+			$('.del').click(function(){
+				$('.Feel_div').hide();
+			});
+			
+//			我的心得与收到的心得tab切换
+			$('.wdxd').click(function(){
+				
+				$('.wdxd').css('color','#FFFFFF');
+				$('.sddxd').css('color','#000');
+				$(this).siblings('a').removeClass('Received');  // 删除其他兄弟元素的样式
+        		$(this).addClass('Received');      
+				$('.wodexinde').show();
+				$('.shoudaoxinde').hide();
+			});
+			$('.sddxd').click(function(){
+				
+				$('.wdxd').css('color','#000');
+				$('.sddxd').css('color','#FFFFFF');
+				$(this).siblings('a').removeClass('Received');  // 删除其他兄弟元素的样式
+        		$(this).addClass('Received');  
+				$('.shoudaoxinde').show();
+				$('.wodexinde').hide();
+			});
+//			我的建议与收到的建议tab切换
+			$('.wdjy').click(function(){
+				$('.wdjy').css('color','#FFFFFF');
+				$('.sddjy').css('color','#000');
+				$(this).siblings('a').removeClass('Received');  // 删除其他兄弟元素的样式
+        		$(this).addClass('Received');      
+				$('.wodejianyi').show();
+//				$('.wodejianyi').css('color:#ffffff');
+				$('.shoudaodejianyi').hide();
+			});
+			$('.sddjy').click(function(){
+				$(this).css('color','#FFFFFF');
+				$('.wdjy').css('color','#000');
+				$(this).siblings('a').removeClass('Received');  // 删除其他兄弟元素的样式
+        		$(this).addClass('Received');  
+				$('.shoudaodejianyi').show();
+				$('.wodejianyi').hide();
+			});
+		</script>
+	</body>
+
+</html>
